@@ -301,7 +301,7 @@ if __name__ == '__main__':
         for_plotting = []
         for freq in f_list:
             graph = graph_generator(a_circuit, a_ensemble, freq)
-            refl, ford = sim_Sij(graph, input_port = 801, output_ports = [802,], noiter = 50*len(a_ensemble))
+            refl, ford = sim_Sij(graph, input_port = 801, output_ports = [802,], noiter = 250*len(a_ensemble))
             freq = "{:.9f}".format(freq) + "\t"
             S11 = "{:.10f}".format(abs(refl)) + "\t" + "{:.8f}".format(phase(refl)/pi*180) + "\t"
             if abs(refl) == 0:
@@ -325,7 +325,7 @@ if __name__ == '__main__':
         n = 0
         for freq in f_list:
             graph = graph_generator(b_circuit, b_ensemble, freq)
-            refl, revs = sim_Sij(graph, input_port = 802, output_ports = [801,], noiter = 50*len(b_ensemble))
+            refl, revs = sim_Sij(graph, input_port = 802, output_ports = [801,], noiter = 250*len(b_ensemble))
             S12 = "{:.10f}".format(abs(revs[0])) + "\t" + "{:.8f}".format(phase(revs[0])/pi*180) + "\t"
             if abs(revs[0]) == 0:
                 S12_dB = "-100.00"
