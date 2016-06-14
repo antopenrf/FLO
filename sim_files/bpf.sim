@@ -1,0 +1,14 @@
+
+L1	1	0	L	4.7	#nH
+C1	1	0 	C	532	#pF
+L2	1	2	L	283	#nH
+C2	2	3 	C	9	#pF
+L3	3	0	L	4.7	#nH
+C3	3       0 	C	532	#pF
+
+
+.Spara	1     	  3
+
+.Freq	0G	  0.2G	0.001G
+
+.End

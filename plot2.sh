@@ -1,0 +1,1 @@
+gnuplot -e "plot 'results2.csv' using 1:3 title 'S12(dB)' with lines, 'results1.csv' using 1:2 title 'S22(dB)' with lines; set term png; set title 'GHz'; set output 'lpf2.png'; set ylabel 'dB' ;set xlabel 'GHz'; set yrange [-50:0]; set grid; replot"

@@ -1,0 +1,10 @@
+plot 'data.txt' using 1:2 with lines
+set term png
+
+set output 'data_21.png'
+replot
+
+plot 'data.txt' using 1:3 with lines
+
+set output 'data_11.png'
+replot
