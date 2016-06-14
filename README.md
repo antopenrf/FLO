@@ -43,6 +43,24 @@ or
 pypy sim.py [file to run] ## pypy can speed up the simulation.
 ```
 
+Here is the output on the terminal.
+```
+No input file given.  Running demo mode on a low pass filter.
+
+
+There are 4 nodes, and ground node is not explicitly included.
+> node list:  1 2 3 0
+
+The netlist is composed of 5 elements with 2 test ports.
+> element 1: l, value 9.78, connects from p1 to p2
+> element 2: l, value 9.78, connects from p2 to p3
+> element 3: c, value 5.43, connects from p1 to p0
+> element 4: c, value 8.09, connects from p2 to p0
+> element 5: c, value 5.43, connects from p3 to p0
+Simulation done! ./sim_files/lpf.plt generated.
+
+```
+
 All the simulation files are put under sim_files folder.  Two design examples can be found under this folder, lpf.sim and bpf.sim.  If no input sim file is given, the program will run lpf.sim as default.  The output files are one .s2p file and one .plt file.  The .plt file is used to make plot by gnuplot.  Here is the command to make plot.  The output of the plot.sh script is named as output.png.
 ```
 cd sim_files
