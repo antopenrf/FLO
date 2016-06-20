@@ -14,7 +14,7 @@ FLO is written as an RF circuit simulation tool based on the concept of signal f
 
 3. Future - add graph GUI in the later stage.
 
-4. Future - add tools to analize data, such as plotting gain circles.
+4. Future - add tools to analyze data, such as plotting gain circles.
 
 5. Future - add more element libraries.
 
